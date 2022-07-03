@@ -1,0 +1,139 @@
+/* 
+
+01 =====TYPOGRAPHY SYSTEM=====
+
+--- FONT SIZE SYSTEM
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+--- FONT WEIGHTS
+
+--- LINE HEIGHTS
+
+--- LETTER SPACING
+
+02 =====COLOR SYSTEM=====
+
+--- PRIMARY
+#68681c
+rgba(104, 104, 28, 1)
+
+--- TINT
+
+--- SHADES
+
+--- ACCENTS
+
+--- GREYS
+
+03 =====SHADOWS=====
+
+
+04 =====BORDER RADIUS=====
+
+
+05 =====WHITESPACE=====
+
+--- SPACING SYSTEM (in px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  color: #fff;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.container {
+  margin: 0 auto;
+  width: 120rem;
+}
+
+.btn:link,
+.btn:visited {
+  font-size: 2rem;
+  font-weight: 500;
+  background-color: #68681c;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+}
+
+/* ************************************ */
+/* HEADER NAVIGATION */
+/* ************************************ */
+
+.header {
+  height: 100vh;
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(217, 134, 0, 0.6)),
+    url("/images/hero.jpeg");
+  background-size: cover;
+}
+
+.header-navigation {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
+}
+
+.header-logo {
+  font-family: "League Script", cursive;
+  font-size: 4rem;
+  color: #fff;
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.main-nav-link:not(:last-child) {
+  margin-right: 3.2rem;
+}
+
+/* ************************************ */
+/* HERO */
+/* ************************************ */
+
+.header-hero {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -60%);
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 4.4rem;
+  font-weight: 500;
+  margin-bottom: 3.2rem;
+}
+
+.hero-text {
+  line-height: 1.5;
+  margin-bottom: 3.2rem;
+}
+
+/* ************************************ */
+/* MENU */
+/* ************************************ */
+
+main {
+  padding: 9.6rem;
+  background-color: #f7f7f7;
+}
