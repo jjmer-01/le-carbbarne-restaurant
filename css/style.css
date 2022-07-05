@@ -1,109 +1,61 @@
-/* 
-
-01 =====TYPOGRAPHY SYSTEM=====
-
---- FONT SIZE SYSTEM
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-
---- FONT WEIGHTS
-
---- LINE HEIGHTS
-
---- LETTER SPACING
-
-02 =====COLOR SYSTEM=====
-
---- PRIMARY
-#68681c
-rgba(104, 104, 28, 1)
-
---- TINT
-
---- SHADES
-
---- ACCENTS
-
---- GREYS
-
-03 =====SHADOWS=====
-
-
-04 =====BORDER RADIUS=====
-
-
-05 =====WHITESPACE=====
-
---- SPACING SYSTEM (in px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-
-
-*/
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-  color: #fff;
-}
-
-body {
-  font-family: "League Spartan", sans-serif;
-  font-size: 2rem;
-  font-weight: 300;
-}
-
-.container {
-  margin: 0 auto;
-  width: 120rem;
-}
-
-.btn:link,
-.btn:visited {
-  font-size: 2rem;
-  font-weight: 500;
-  background-color: #68681c;
-  color: #fff;
-  text-decoration: none;
-  display: inline-block;
-  padding: 1.6rem 3.2rem;
+.header {
+  position: relative;
+  height: 100vh;
 }
 
 /* ************************************ */
 /* HEADER NAVIGATION */
 /* ************************************ */
 
-.header {
-  height: 100vh;
-  position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(217, 134, 0, 0.6)),
-    url("/images/hero.jpeg");
-  background-size: cover;
-}
-
 .header-navigation {
   display: flex;
   justify-content: space-between;
   padding-top: 2.4rem;
-  padding-bottom: 2.4rem;
+  padding-bottom: 18rem;
+  position: sticky;
+  top: 0rem;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.95),
+    rgba(255, 255, 255, 0)
+  );
+  z-index: 9999;
 }
 
 .header-logo {
   font-family: "League Script", cursive;
   font-size: 4rem;
   color: #fff;
+  padding-left: 9.6rem;
 }
 
+.main-nav {
+  padding-right: 9.6rem;
+}
 .main-nav-list {
   list-style: none;
   display: flex;
 }
 
-.main-nav-link:not(:last-child) {
+.main-nav-list li:not(:last-child) {
   margin-right: 3.2rem;
+}
+
+.main-nav-link {
+  text-decoration: none;
+  padding: 0.8rem;
+  color: #fff;
+}
+
+.main-nav .btn--full:link,
+.main-nav .btn--full:visited {
+  padding-right: 2.4rem;
+  padding-left: 2.4rem;
+  transition: all 0.3s;
+}
+
+.main-nav .btn--full:hover,
+.main-nav .btn--full:active {
+  font-size: 2rem;
 }
 
 /* ************************************ */
@@ -111,11 +63,19 @@ body {
 /* ************************************ */
 
 .header-hero {
+  display: flex;
+  justify-content: center;
+
   position: absolute;
-  left: 50%;
   top: 50%;
-  transform: translate(-50%, -60%);
+  left: 50%;
+  transform: translate(-50%, -50%);
+
   text-align: center;
+}
+
+.hero-inner {
+  align-items: center;
 }
 
 .hero-title {
@@ -130,10 +90,46 @@ body {
 }
 
 /* ************************************ */
+/* OUR STORY */
+/* ************************************ */
+
+.grid--our-story {
+  gap: 4.8rem;
+  column-gap: 8rem;
+  background-color: rgba(24, 31, 28, 0.75);
+  padding: 5.6rem;
+  align-items: center;
+}
+
+.img--our-story {
+  width: 50rem;
+}
+
+.container--our-story-grid p {
+  margin-bottom: 2.4rem;
+}
+
+/* ************************************ */
 /* MENU */
 /* ************************************ */
 
-main {
-  padding: 9.6rem;
-  background-color: #f7f7f7;
+.menu-category:not(:first-child) {
+  margin-top: 5.2rem;
+}
+
+.menu-item {
+  grid-template-columns: 3fr 1fr;
+  row-gap: 0.8rem;
+  column-gap: 2rem;
+  padding: 1.6rem;
+  background-color: #68681c;
+}
+
+.menu-item .price {
+  justify-self: end;
+}
+
+.menu-description {
+  font-size: 1.6rem;
+  font-style: italic;
 }
