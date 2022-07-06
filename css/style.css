@@ -133,3 +133,21 @@
   font-size: 1.6rem;
   font-style: italic;
 }
+
+.menu-diets {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+/* ************************************ */
+/* RESERVATION */
+/* ************************************ */
+
+.hours-table caption {
+  opacity: 0;
+}
+
+.reservation-form {
+  grid-column: 1 / span 2;
+}

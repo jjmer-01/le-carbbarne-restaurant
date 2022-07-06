@@ -74,7 +74,7 @@
           <div class="container--our-story-grid">
             <h3 class="sub-head--our-story">A fresh start</h3>
             <p>
-               Gabrielle and Jib Wahlberg have been in the kitchen since they're Grandfather, Lowell, first gave them carte blanche to garnish his epic Thanksgiving dinners. The food he passed on to his grandkids translated into a life-long love affair with the gastronomic arts. </p>
+               Gabrielle and Jib Wahlberg have been in the kitchen since their Grandfather, Lowell, first gave them carte blanche to garnish his epic Thanksgiving dinners. The food he passed on to his grandkids translated into a life-long love affair with the gastronomic arts. </p>
                
                <p>During a break in Jib's employment after an economic downturn, they realized they were both craving a creative challenge. From there, the concept of Le Carbbarné was born.</p>
            
@@ -284,15 +284,58 @@
       <section class="container section-reservations">
         <h2 class="h2-sect-title">Make a Reservation</h2>
         <div class="grid grid--2-cols section-background grid--reservation">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-            voluptate, minus libero est neque ipsa eaque aut deserunt maxime ut.
-            Consequatur quas voluptatum explicabo beatae eligendi iusto ratione
-            dolor quam. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Cum voluptates omnis vitae praesentium nemo dolore architecto
-            impedit vero adipisci eveniet, doloribus, perferendis fuga pariatur
-            dicta ad, repellendus ullam veniam accusantium.
-          </p>
+          <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3180.3550485146234!2d-86.04003098476403!3d37.144256355956365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88661b89f52aacdd%3A0xb8c6104af1812204!2s566%20Old%20Mammoth%20Cave%20Rd%2C%20Cave%20City%2C%20KY%2042127!5e0!3m2!1sen!2sus!4v1657078510360!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="hours-container">
+            <table class="hours-table">
+              <caption>Hours of operation</caption>
+              <tr>
+                <td>Tuesday</td>
+                <td>4pm - 9pm</td>
+              </tr>
+              <tr>
+                <td>Wednesday</td>
+                <td>4pm - 9pm</td>
+              </tr>
+              <tr>
+                <td>Thursday</td>
+                <td>4pm - 9pm</td>
+              </tr>
+              <tr>
+                <td>Friday</td>
+                <td>11am - 10pm</td>
+              </tr>
+              <tr>
+                <td>Saturday</td>
+                <td>11am - 10pm</td>
+              </tr>
+              <tr>
+                <td>Sunday</td>
+                <td>11am - 10pm</td>
+              </tr>
+            </table>
+          </div>
+          <form class="reservation-form">
+            <label for="date">Date</label>
+            <input type="date" id="date" name="reservation-date" required>
+            <label for="time">Time</label>
+            <input type="time" id="time" name="reservation-time" required>
+            <label for="party-num">No. in Party</label>
+            <select id="party-num" name="reservation-num" required>
+              <option value="">Choose One</option>
+              <option value="one">1</option>
+              <option value="two">2</option>
+              <option value="three">3</option>
+              <option value="four">4</option>
+              <option value="five">5</option>
+              <option value="six">6</option>
+              <option value="seven">7</option>
+              <option value="eight-plus">8 or more</option>   
+            </select>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="reservation-email" required>
+          </form>
         </div>
       </section>
     </main>
