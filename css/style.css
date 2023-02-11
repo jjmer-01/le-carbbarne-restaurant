@@ -151,3 +151,8 @@
 .reservation-form {
   grid-column: 1 / span 2;
 }
+
+.footer-menu-list {
+  text-align: right;
+}
+/*test*/
