@@ -319,7 +319,8 @@
           </div>
         </div>
         <!-- RESERVATION FORM -->
-          <form class="grid grid--6-cols reservation-form ">
+          <form class="reservation-form">
+            <div class="grid grid--2-cols">
             <div class="form-input date-div">
               <label for="date">Date</label>
               <input type="date" id="date" name="reservation-date" required>
@@ -328,6 +329,9 @@
               <label for="time">Time</label>
               <input type="time" id="time" name="reservation-time" value="17:00" step="1800" required>
             </div>
+          </div>
+          <div class="grid grid--3-cols">
+
             <div class="form-input party-num-div">
               <label for="party-num">No. in Party</label>
               <select id="party-num" name="reservation-num" required>
@@ -350,7 +354,8 @@
               <label for="email">Email</label>
               <input type="email" id="email" name="reservation-email" placeholder="jibby@example.com" maxlength="40" required>
             </div>
-
+          </div>
+            
             <button class="btn btn--form" type="submit">Reserve a Table</button>
           </form>
         </div>
