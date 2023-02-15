@@ -316,25 +316,47 @@
               </tr>
             </table>
           </div>
+        </div>
+        <!-- RESERVATION FORM -->
           <form class="reservation-form">
-            <label for="date">Date</label>
-            <input type="date" id="date" name="reservation-date" required>
-            <label for="time">Time</label>
-            <input type="time" id="time" name="reservation-time" required>
-            <label for="party-num">No. in Party</label>
-            <select id="party-num" name="reservation-num" required>
-              <option value="">Choose One</option>
-              <option value="one">1</option>
-              <option value="two">2</option>
-              <option value="three">3</option>
-              <option value="four">4</option>
-              <option value="five">5</option>
-              <option value="six">6</option>
-              <option value="seven">7</option>
-              <option value="eight-plus">8 or more</option>   
-            </select>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="reservation-email" required>
+            <div class="grid grid--2-cols">
+            <div class="form-input date-div">
+              <label for="date">Date</label>
+              <input type="date" id="date" name="reservation-date" required>
+            </div>
+            <div class="form-input time-div">
+              <label for="time">Time</label>
+              <input type="time" id="time" name="reservation-time" value="17:00" step="1800" required>
+            </div>
+          </div>
+          <div class="grid grid--3-cols">
+
+            <div class="form-input party-num-div">
+              <label for="party-num">No. in Party</label>
+              <select id="party-num" name="reservation-num" required>
+                <option value="">Choose One</option>
+                <option value="one">1</option>
+                <option value="two">2</option>
+                <option value="three">3</option>
+                <option value="four">4</option>
+                <option value="five">5</option>
+                <option value="six">6</option>
+                <option value="seven">7</option>
+                <option value="eight-plus">8 +</option>   
+              </select>
+            </div>
+            <div class="form-input reservation-name-div">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="reservation-name" placeholder="Jibby Wahlberg" maxlength="40" required>
+            </div>
+            <div class="form-input email-div">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="reservation-email" placeholder="jibby@example.com" maxlength="40" required>
+            </div>
+          </div>
+            
+            <button class="btn btn--form" type="submit">Reserve a Table</button>
+
           </form>
         </div>
       </section>
