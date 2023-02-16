@@ -158,6 +158,8 @@ td {
 
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
+  gap: 2.4rem;
+  column-gap: 3.6rem;
 }
 
 .grid--3-cols {
