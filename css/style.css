@@ -171,32 +171,3 @@
 .reservation-form {
   grid-column: 1 / span 2;
 }
-
-.reservation-form label {
-  display: block;
-  font-size: 1.6rem;
-  font-weight: 500;
-  margin-bottom: 1.2rem;
-}
-
-.reservation-form input {
-  width: 100%;
-  padding: 1.2rem;
-  font-size: 1.8rem;
-  font-family: inherit;
-  border: none;
-  background-color: #d4d6b9;
-  border-radius: 9px;
-}
-
-.reservation-form select {
-  font-family: inherit;
-}
-
-.reservation-form button {
-  font-family: inherit;
-}
-
-.footer-menu-list {
-  text-align: right;
-}
