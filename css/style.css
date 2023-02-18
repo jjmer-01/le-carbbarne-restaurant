@@ -141,101 +141,35 @@
 }
 
 /* ************************************ */
-/* HOURS AND LOCATION */
+/* RESERVATION */
 /* ************************************ */
 
 .location-hours {
-  gap: 3.6rem;
+  margin-bottom: 6.2rem;
+  gap: 2.4rem;
 }
 
+.location-map {
+  position: relative;
+}
 .google-map {
-  width: 60rem;
-  height: 30rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .hours-container {
   justify-self: center;
-  align-self: center;
-  /* padding: 1.6rem; */
-}
-.hours-table {
-  border-spacing: 2.4rem 0.6rem;
 }
 
-/* ************************************ */
-/* RESERVATION */
-/* ************************************ */
+.hours-table caption {
+  opacity: 0;
+}
 
 .reservation-form {
-  margin-top: 5.2rem;
-  column-gap: 2.4rem;
+  grid-column: 1 / span 2;
 }
 
-.form-input {
-  padding: 3.2rem 0;
-  place-self: center stretch;
-}
 
-.date-div,
-.time-div,
-.party-num-div {
-  grid-column-start: span 2;
-}
-
-.reservation-name-div,
-.email-div {
-  grid-column-start: span 3;
-}
-
-/* .email-div {
-  display: ;
-} */
-
-input,
-select {
-  display: flex;
-  width: 100%;
-  height: 5.2rem;
-  padding: 0.8rem;
-  font-family: "League Spartan", sans-serif;
-  font-size: 1.6rem;
-}
-
-input:blank {
-  color: red;
-}
-
-input::placeholder {
-  margin-left: 0.8rem;
-  color: #9d9d9d;
-}
-
-/* ************************************ */
-/* FOOTER */
-/* ************************************ */
-
-.section-footer {
-  max-width: 100%;
-  background-image: linear-gradient(
-    rgba(255, 255, 255, 0),
-    rgba(0, 0, 0, 0.95)
-  );
-  margin-top: 8rem;
-}
-
-.footer-inner {
-  max-width: 120rem;
-  margin: 0 auto;
-  padding: 5.6rem 3.6rem;
-}
-
-.footer-logo {
-  font-family: "League Script", cursive;
-  font-size: 4rem;
-  color: #fff;
-}
-
-.footer-menu-list {
-  text-align: right;
-}
-/*test*/

@@ -17,35 +17,34 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
     <!-- STYLESHEETS -->
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/general.css" />
-   
+    <link rel="stylesheet" href="/css/general.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+
     <title>Le Carbbarné | Sophisticated, plant-based eatery</title>
   </head>
 
   <body>
-    
     <!-- HEADER -->
     <header class="header">
-    <nav class="header-navigation">
-      <div class="header-logo">Le Carbbarné</div>
-      <div class="main-nav">
-        <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">Our Story</a></li>
-          <li><a class="main-nav-link" href="#">Menu</a></li>
-          <li>
-            <a class="main-nav-link" href="#">Reservations</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  
-  <!-- STICKY SOCIAL ICONS -->
-  <aside></aside>
-  
-  <!-- HERO SECTION -->
-      <section class="container header-hero testing">
+      <nav class="header-navigation">
+          <div class="header-logo">Le Carbbarné</div>
+          <div class="main-nav">
+            <ul class="main-nav-list">
+              <li><a class="main-nav-link" href="#">Our Story</a></li>
+              <li><a class="main-nav-link" href="#">Menu</a></li>
+              <li>
+                <a class="main-nav-link" href="#">Reservations</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- STICKY SOCIAL ICONS -->
+      <aside></aside>
+
+      <!-- HERO SECTION -->
+      <section class="container header-hero">
         <div class="hero-inner">
           <h1 class="hero-title">A decadent spin on plant-based dining</h1>
           <p class="hero-text">
@@ -69,7 +68,7 @@
         <div class="grid grid--2-cols section-background grid--our-story">
 
           <!-- <div class="container--our-story-grid "> -->
-              <img class="img--our-story just-r" src="css/images/friends-cooking.jpeg" alt="Two friends cooking in a bright, commercial kitchen" />
+              <img class="img--our-story just-r" src="/images/friends-cooking.jpeg" alt="Two friends cooking in a bright, commercial kitchen" />
           <!-- </div> -->
 
           <div class="container--our-story-grid">
@@ -97,7 +96,7 @@
           </div>
 
           <!-- <div class="container--our-story-grid">    -->
-              <img class="img--our-story" src="css/images/unique-dish.jpeg" alt="A full plate of rustic street tacos that have sliced avocados, corn, red onion, cilantro, sauces, and lemons." />
+              <img class="img--our-story" src="/images/unique-dish.jpeg" alt="A full plate of rustic street tacos that have sliced avocados, corn, red onion, cilantro, sauces, and lemons." />
           <!-- </div> -->
 
         </div>
@@ -284,13 +283,13 @@
       <!-- RESERVATION SECTION -->
       <section class="container section-reservations">
         <h2 class="h2-sect-title">Make a Reservation</h2>
-        <div class=" section-background">
-          <div class="grid grid--2-cols location-hours">
-          <div class="location-map">
-            <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3180.3550485146234!2d-86.04003098476403!3d37.144256355956365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88661b89f52aacdd%3A0xb8c6104af1812204!2s566%20Old%20Mammoth%20Cave%20Rd%2C%20Cave%20City%2C%20KY%2042127!5e0!3m2!1sen!2sus!4v1657078510360!5m2!1sen!2sus"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="grid grid--2-cols section-background grid--reservation">
+          <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3180.3550485146234!2d-86.04003098476403!3d37.144256355956365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88661b89f52aacdd%3A0xb8c6104af1812204!2s566%20Old%20Mammoth%20Cave%20Rd%2C%20Cave%20City%2C%20KY%2042127!5e0!3m2!1sen!2sus!4v1657078510360!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
           <div class="hours-container">
             <table class="hours-table">
+              <caption>Hours of operation</caption>
               <tr>
                 <td>Tuesday</td>
                 <td>4pm - 9pm</td>
@@ -319,7 +318,8 @@
           </div>
         </div>
         <!-- RESERVATION FORM -->
-          <form class="grid grid--6-cols reservation-form ">
+          <form class="reservation-form">
+            <div class="grid grid--2-cols">
             <div class="form-input date-div">
               <label for="date">Date</label>
               <input type="date" id="date" name="reservation-date" required>
@@ -328,6 +328,9 @@
               <label for="time">Time</label>
               <input type="time" id="time" name="reservation-time" value="17:00" step="1800" required>
             </div>
+          </div>
+          <div class="grid grid--3-cols">
+
             <div class="form-input party-num-div">
               <label for="party-num">No. in Party</label>
               <select id="party-num" name="reservation-num" required>
@@ -350,41 +353,13 @@
               <label for="email">Email</label>
               <input type="email" id="email" name="reservation-email" placeholder="jibby@example.com" maxlength="40" required>
             </div>
-
+          </div>
+            
             <button class="btn btn--form" type="submit">Reserve a Table</button>
+
           </form>
         </div>
       </section>
-
-      <!-- FOOTER -->
-
     </main>
-    <footer class="section-footer ">
-      <div class="grid grid--3-cols footer-inner">
-
-        <div class="">
-          <div class="footer-logo">Le Carbbarné</div>
-          <p class="copyright">
-            Copyright 2022
-          </p>
-        </div>
-        <div class="footer-menu-list">
-          Company
-          <br/>
-          Careers
-          <br />
-          Intern Program
-          <br />
-          Contact
-        </div>
-        <div class="footer-menu-list">
-          About
-          <br />
-          Inspirations
-          <br />
-          Reservations
-        </div>
-      </div>
-    </footer>
   </body>
 </html>

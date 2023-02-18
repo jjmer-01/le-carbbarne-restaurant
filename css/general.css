@@ -45,7 +45,6 @@ rgba(104, 104, 28, 1)
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  border-style: none;
 }
 
 html {
@@ -64,7 +63,7 @@ body {
       rgba(79, 57, 31, 0.8),
       rgba(0, 0, 0, 0.5)
     ),
-    url("images/hero.jpeg");
+    url("/images/hero.jpeg");
   background-size: cover;
   background-attachment: fixed;
 }
@@ -85,7 +84,7 @@ h6 {
 h2 {
   font-size: 4.4rem;
   margin-bottom: 2.4rem;
-  margin-top: 18rem;
+  margin-top: 12rem;
   text-align: center;
 }
 
@@ -96,6 +95,10 @@ h3 {
 
 h4 {
   line-height: 1.2;
+}
+
+td {
+  padding: 0.2rem 0.8rem;
 }
 
 .container {
@@ -149,15 +152,6 @@ h4 {
   font-size: 1.8rem;
 }
 
-.btn--form {
-  background-color: #68681c;
-  color: #fff;
-  grid-column-start: span 6;
-  margin-top: 5.2rem;
-  border-style: none;
-  height: 6.4rem;
-}
-
 .grid {
   display: grid;
 }
@@ -172,10 +166,6 @@ h4 {
   column-gap: 3.6rem;
 }
 
-.grid--6-cols {
-  grid-template-columns: repeat(6, 1fr);
-}
-
 /* HELPERS */
 
 .just-r {
@@ -185,3 +175,5 @@ h4 {
 .just-r > * {
   text-align: right;
 }
+
+/*test*/
