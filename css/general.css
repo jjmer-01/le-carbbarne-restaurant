@@ -127,7 +127,9 @@ h4 {
 }
 
 .btn--primary:link,
-.btn--primary:visited {
+.btn--primary:visited,
+.btn--form:link,
+.btn--form:visited {
   background-color: #68681c;
   color: #fff;
   text-decoration: none;
@@ -143,7 +145,9 @@ h4 {
 .btn--primary:hover,
 .btn--primary:active,
 .btn--secondary:hover,
-.btn--secondary:active {
+.btn--secondary:active,
+.btn--form:hover,
+.btn--form:active {
   background-color: #fff;
   color: #181f1c;
   font-size: 1.8rem;
