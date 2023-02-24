@@ -6,6 +6,7 @@
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 
 --- FONT WEIGHTS
+200 - bold
 
 --- LINE HEIGHTS
 
@@ -96,6 +97,10 @@ h3 {
 
 h4 {
   line-height: 1.2;
+}
+
+a:link {
+  text-decoration: none;
 }
 
 .container {
