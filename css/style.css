@@ -119,6 +119,7 @@
   column-gap: 2rem;
   padding: 1.6rem;
   background-color: #68681c;
+  box-shadow: -0.25rem 0.25rem 1.5rem #181f1c;
 }
 
 .menu-item .price {
