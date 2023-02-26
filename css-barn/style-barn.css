@@ -1,0 +1,73 @@
+/* 
+
+01 =====TYPOGRAPHY SYSTEM=====
+
+font-family: 'Frijole', cursive;
+font-family: 'Modak', cursive;
+font-family: 'Slackey', cursive;
+font-family: 'Smokum', cursive;
+font-family: 'Xanh Mono', monospace;
+
+--- FONT SIZE SYSTEM
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+--- FONT WEIGHTS
+200 - bold
+
+--- LINE HEIGHTS
+
+--- LETTER SPACING
+
+02 =====COLOR SYSTEM=====
+
+--- PRIMARY
+
+
+--- TINT
+
+--- SHADES
+
+
+--- ACCENTS
+
+
+--- GREYS
+
+03 =====SHADOWS=====
+
+
+04 =====BORDER RADIUS=====
+
+
+05 =====WHITESPACE=====
+
+--- SPACING SYSTEM (in px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border-style: none;
+}
+
+html {
+  font-size: 62.5%;
+  color: fuchsia;
+  background-color: yellow;
+}
+
+h1 {
+  font-family: "Modak", cursive;
+  font-size: 7.4rem;
+  font-weight: 100;
+}
+
+p {
+  font-family: "Xanh Mono", monospace;
+  font-size: 3.6rem;
+  color: chartreuse;
+  background-color: blue;
+}
