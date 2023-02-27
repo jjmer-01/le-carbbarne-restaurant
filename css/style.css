@@ -98,7 +98,7 @@
 }
 
 .img--our-story {
-  width: 50rem;
+  max-width: 100%;
 }
 
 .container--our-story-grid p {

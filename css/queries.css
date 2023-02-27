@@ -1,0 +1,17 @@
+/* rem and em do NOT depend on html font-size in media queries. Instead, 1rem = 1em = 16px */
+
+/* 1250px */
+/* 1250 / 16 = 78.1 */
+
+/* ************************************ */
+/* MAX WIDTH 1280PX  (Smaller desktops) */
+/* ************************************ */
+
+@media (max-width: 80em) {
+  .google-map {
+    width: 100%;
+  }
+  .footer-inner {
+    max-width: 80%;
+  }
+}
