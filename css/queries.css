@@ -20,5 +20,18 @@
 /* MAX WIDTH 1200PX  (Landscape desktops) */
 /* ************************************ */
 
-@media (max-width: ) {
+@media (max-width: 75em) {
+  .grid--our-story {
+    grid-template-columns: repeat(1, 2fr);
+  }
+
+  #p--break-away {
+    grid-row-start: 4;
+  }
+
+  /* #img--unique-dish {
+    transform: rotate(90deg);
+    max-height: 100%;
+    justify-self: center;
+  } */
 }

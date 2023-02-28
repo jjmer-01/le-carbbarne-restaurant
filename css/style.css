@@ -90,6 +90,7 @@
 /* ************************************ */
 
 .grid--our-story {
+  grid-template-columns: repeat(2, 1fr);
   gap: 4.8rem;
   column-gap: 8rem;
   background-color: rgba(24, 31, 28, 0.75);
