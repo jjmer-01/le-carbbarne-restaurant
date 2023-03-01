@@ -46,8 +46,48 @@
 }
 
 /* ************************************ */
-/* MAX WIDTH 1056PX  (Landscape desktops) */
+/* MAX WIDTH 1056PX  (...) */
 /* ************************************ */
 
 @media (max-width: 66em) {
+  body {
+    font-size: 1.8em;
+  }
+
+  main {
+    margin: -9.6rem 3.6rem 9.6rem 5.2rem;
+  }
+
+  .hero-title {
+    font-size: 3.6rem;
+  }
+
+  .btn-block {
+    flex-direction: column;
+  }
+
+  .grid--menu {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .form-input {
+    padding: 1em 0;
+  }
+
+  .date-div,
+  .time-div,
+  .party-num-div,
+  .reservation-name-div {
+    grid-column-start: span 3;
+  }
+
+  .email-div {
+    grid-column-start: span 6;
+  }
+}
+
+/* ************************************ */
+/* MAX WIDTH 800PX  (...) */
+/* ************************************ */
+
+@media (max-width: 50em) {
 }
