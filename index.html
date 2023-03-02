@@ -14,39 +14,62 @@
     />
 
     <!-- ICONS -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" /> -->
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
 
     <!-- STYLESHEETS -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/queries.css" />
-   
+
     <title>Le Carbbarné | Sophisticated, plant-based eatery</title>
   </head>
 
   <body>
-    
     <!-- HEADER -->
     <header class="header">
-    <nav class="header-navigation">
-      <div class="header-logo">Le Carbbarné</div>
-      <div class="main-nav">
-        <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#h2-our-story">Our Story</a></li>
-          <li><a class="main-nav-link" href="#h2-menu">Menu</a></li>
-          <li>
-            <a class="main-nav-link" href="#h2-reservation">Reservations</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  
-  <!-- STICKY SOCIAL ICONS -->
-  <aside></aside>
-  
-  <!-- HERO SECTION -->
-      <section class="container header-hero testing">
+      <nav class="header-navigation">
+        <div class="header-logo">Le Carbbarné</div>
+        <div class="main-nav">
+          <ul class="main-nav-list">
+            <li><a class="main-nav-link" href="#h2-our-story">Our Story</a></li>
+            <li><a class="main-nav-link" href="#h2-menu">Menu</a></li>
+            <li>
+              <a class="main-nav-link" href="#h2-reservation">Reservations</a>
+            </li>
+          </ul>
+        </div>
+        <button class="btn--mobile-nav">
+          <span
+            class="material-symbols-outlined icon--mobile-nav"
+            name="menu-icon"
+            >menu</span
+          >
+          <span
+            class="material-symbols-outlined icon--mobile-nav"
+            name="close-icon"
+          >
+            close
+          </span>
+        </button>
+      </nav>
+
+      <!-- STICKY SOCIAL ICONS -->
+      <aside></aside>
+
+      <!-- HERO SECTION -->
+      <section class="container header-hero">
         <div class="hero-inner">
           <h1 class="hero-title">A decadent spin on plant-based dining</h1>
           <p class="hero-text">
@@ -68,52 +91,74 @@
       <section class="container section-our-story">
         <h2 class="h2-sect-title" id="h2-our-story">Our Story</h2>
         <div class="grid section-background grid--our-story">
-
           <div class="container--our-story-grid container--img-our-story">
-              <img class="img--our-story just-r" src="css/images/friends-cooking.jpeg" alt="Two friends cooking in a bright, commercial kitchen" />
+            <img
+              class="img--our-story just-r"
+              src="css/images/friends-cooking.jpeg"
+              alt="Two friends cooking in a bright, commercial kitchen"
+            />
           </div>
 
           <div class="container--our-story-grid">
             <h3 class="sub-head--our-story">A fresh start</h3>
             <p>
-               Gabrielle and Jib Wahlberg have been in the kitchen since their Grandfather, Lowell, first gave them carte blanche to garnish his epic Thanksgiving dinners. The food he passed on to his grandkids translated into a life-long love affair with the gastronomic arts. </p>
-               
-               <p>During a break in Jib's employment after an economic downturn, they realized they were both craving a creative challenge. From there, the concept of Le Carbbarné was born.</p>
-           
+              Gabrielle and Jib Wahlberg have been in the kitchen since their
+              Grandfather, Lowell, first gave them carte blanche to garnish his
+              epic Thanksgiving dinners. The food he passed on to his grandkids
+              translated into a life-long love affair with the gastronomic arts.
+            </p>
+
+            <p>
+              During a break in Jib's employment after an economic downturn,
+              they realized they were both craving a creative challenge. From
+              there, the concept of Le Carbbarné was born.
+            </p>
           </div>
 
           <div class="container--our-story-grid just-r" id="p--break-away">
-            <h3 class="sub-head--our-story" id="p--break-away">Break away from boring</h3>
+            <h3 class="sub-head--our-story" id="p--break-away">
+              Break away from boring
+            </h3>
             <p>
-              Gabrielle's travels during University transformed her perception of what was possible with food. She loves to borrow from traditional Mexican and Thai cuisine. Jib's unparalleled experience working in 5-star Michelin restaurants during his young adulthood shaped his unrelenting commitment to service.
+              Gabrielle's travels during University transformed her perception
+              of what was possible with food. She loves to borrow from
+              traditional Mexican and Thai cuisine. Jib's unparalleled
+              experience working in 5-star Michelin restaurants during his young
+              adulthood shaped his unrelenting commitment to service.
             </p>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio
               accusantium quis a, hic, ipsum quos ex illo doloremque sunt
               repellendus sequi porro aliquam ab fugiat expedita eligendi
-              molestiae, in neque. Dignissimos dolores iure distinctio exercitationem
-              voluptatibus, perferendis vel, possimus reprehenderit, tempore esse
-              aut consectetur.
+              molestiae, in neque. Dignissimos dolores iure distinctio
+              exercitationem voluptatibus, perferendis vel, possimus
+              reprehenderit, tempore esse aut consectetur.
             </p>
           </div>
 
-          <div class="container--our-story-grid container--img-our-story">   
-              <img class="img--our-story" id="img--unique-dish" src="css/images/unique-dish.jpeg" alt="A full plate of rustic street tacos that have sliced avocados, corn, red onion, cilantro, sauces, and lemons." />
+          <div class="container--our-story-grid container--img-our-story">
+            <img
+              class="img--our-story"
+              id="img--unique-dish"
+              src="css/images/unique-dish.jpeg"
+              alt="A full plate of rustic street tacos that have sliced avocados, corn, red onion, cilantro, sauces, and lemons."
+            />
           </div>
-
         </div>
       </section>
       <section class="container section-menu">
         <h2 class="h2-sect-title" id="h2-menu">Menu</h2>
         <div class="section-background">
-
-        <!-- APPETIZERS -->
+          <!-- APPETIZERS -->
           <h3 class="menu-category">Hors d'oeuvres</h3>
           <div class="grid grid--3-cols grid--menu">
             <div class="grid menu-item">
               <h4 class="menu-title">Pomme de Terre</h4>
               <p class="price">13</p>
-              <p class="menu-description">Description of the item with arugula, asparagus, and orange zest.</p>
+              <p class="menu-description">
+                Description of the item with arugula, asparagus, and orange
+                zest.
+              </p>
               <p class="menu-diets">
                 <span class="material-symbols-outlined">eco</span>
                 <span class="material-symbols-outlined">grass</span>
@@ -122,7 +167,10 @@
             <div class="grid menu-item">
               <h4 class="menu-title">Appetizer Item 5</h4>
               <p class="price">11</p>
-              <p class="menu-description">Description of the item with arugula, asparagus, and orange zest.</p>
+              <p class="menu-description">
+                Description of the item with arugula, asparagus, and orange
+                zest.
+              </p>
               <p class="menu-diets">
                 <span class="material-symbols-outlined">eco</span>
                 <span class="material-symbols-outlined">grass</span>
@@ -131,7 +179,10 @@
             <div class="grid menu-item">
               <h4 class="menu-title">Appetizer Item 5</h4>
               <p class="price">14</p>
-              <p class="menu-description">Description of the item with arugula, asparagus, and orange zest.</p>
+              <p class="menu-description">
+                Description of the item with arugula, asparagus, and orange
+                zest.
+              </p>
               <p class="menu-diets">
                 <span class="material-symbols-outlined">eco</span>
                 <span class="material-symbols-outlined">grass</span>
@@ -140,7 +191,10 @@
             <div class="grid menu-item">
               <h4 class="menu-title">Appetizer Item 5</h4>
               <p class="price">9</p>
-              <p class="menu-description">Description of the item with arugula, asparagus, and orange zest.</p>
+              <p class="menu-description">
+                Description of the item with arugula, asparagus, and orange
+                zest.
+              </p>
               <p class="menu-diets">
                 <span class="material-symbols-outlined">eco</span>
                 <span class="material-symbols-outlined">grass</span>
@@ -149,7 +203,10 @@
             <div class="grid menu-item">
               <h4 class="menu-title">Appetizer Item 5</h4>
               <p class="price">13</p>
-              <p class="menu-description">Description of the item with arugula, asparagus, and orange zest.</p>
+              <p class="menu-description">
+                Description of the item with arugula, asparagus, and orange
+                zest.
+              </p>
               <p class="menu-diets">
                 <span class="material-symbols-outlined">eco</span>
                 <span class="material-symbols-outlined">grass</span>
@@ -158,176 +215,222 @@
           </div>
 
           <!-- ENTREES -->
-         
-            <h3 class="menu-category">Entrees</h3>
-            <div class="grid grid--3-cols grid--menu">
 
-              <div class="grid menu-item">
-                <h4 class="menu-title">Entree Item 8</h4>
-                <p class="price">13</p>
-                <p class="menu-description">Description of the item with arugula, asparagus, and orange zest.</p>
-                <p class="menu-diets">
-                  <span class="material-symbols-outlined">eco</span>
-                  <span class="material-symbols-outlined">grass</span>
-                </p>
-              </div>
-              <div class="grid menu-item">
-                <h4 class="menu-title">Entree Item 8</h4>
-                <p class="price">13</p>
-                <p class="menu-description">Description of the item with arugula, asparagus, and orange zest.</p>
-                <p class="menu-diets">
-                  <span class="material-symbols-outlined">eco</span>
-                  <span class="material-symbols-outlined">grass</span>
-                </p>
-              </div>
-              <div class="grid menu-item">
-                <h4 class="menu-title">Entree Item 8</h4>
-                <p class="price">13</p>
-                <p class="menu-description">Description of the item with arugula, asparagus, and orange zest.</p>
-                <p class="menu-diets">
-                  <span class="material-symbols-outlined">eco</span>
-                  <span class="material-symbols-outlined">grass</span>
-                </p>
-              </div>
-              <div class="grid menu-item">
-                <h4 class="menu-title">Entree Item 8</h4>
-                <p class="price">13</p>
-                <p class="menu-description">Description of the item with arugula, asparagus, and orange zest.</p>
-                <p class="menu-diets">
-                  <span class="material-symbols-outlined">eco</span>
-                  <span class="material-symbols-outlined">grass</span>
-                </p>
-              </div>
-              <div class="grid menu-item">
-                <h4 class="menu-title">Entree Item 8</h4>
-                <p class="price">13</p>
-                <p class="menu-description">Description of the item with arugula, asparagus, and orange zest.</p>
-                <p class="menu-diets">
-                  <span class="material-symbols-outlined">eco</span>
-                  <span class="material-symbols-outlined">grass</span>
-                </p>
-              </div>
-              <div class="grid menu-item">
-                <h4 class="menu-title">Entree Item 8</h4>
-                <p class="price">13</p>
-                <p class="menu-description">Description of the item with arugula, asparagus, and orange zest.</p>
-                <p class="menu-diets">
-                  <span class="material-symbols-outlined">eco</span>
-                  <span class="material-symbols-outlined">grass</span>
-                </p>
-              </div>
-              <div class="grid menu-item">
-                <h4 class="menu-title">Entree Item 8</h4>
-                <p class="price">13</p>
-                <p class="menu-description">Description of the item with arugula, asparagus, and orange zest.</p>
-                <p class="menu-diets">
-                  <span class="material-symbols-outlined">eco</span>
-                  <span class="material-symbols-outlined">grass</span>
-                </p>
-              </div>
-              <div class="grid menu-item">
-                <h4 class="menu-title">Entree Item 8</h4>
-                <p class="price">13</p>
-                <p class="menu-description">Description of the item with arugula, asparagus, and orange zest.</p>
-                <p class="menu-diets">
-                  <span class="material-symbols-outlined">eco</span>
-                  <span class="material-symbols-outlined">grass</span>
-                </p>
-              </div>
-
+          <h3 class="menu-category">Entrees</h3>
+          <div class="grid grid--3-cols grid--menu">
+            <div class="grid menu-item">
+              <h4 class="menu-title">Entree Item 8</h4>
+              <p class="price">13</p>
+              <p class="menu-description">
+                Description of the item with arugula, asparagus, and orange
+                zest.
+              </p>
+              <p class="menu-diets">
+                <span class="material-symbols-outlined">eco</span>
+                <span class="material-symbols-outlined">grass</span>
+              </p>
             </div>
-            
+            <div class="grid menu-item">
+              <h4 class="menu-title">Entree Item 8</h4>
+              <p class="price">13</p>
+              <p class="menu-description">
+                Description of the item with arugula, asparagus, and orange
+                zest.
+              </p>
+              <p class="menu-diets">
+                <span class="material-symbols-outlined">eco</span>
+                <span class="material-symbols-outlined">grass</span>
+              </p>
+            </div>
+            <div class="grid menu-item">
+              <h4 class="menu-title">Entree Item 8</h4>
+              <p class="price">13</p>
+              <p class="menu-description">
+                Description of the item with arugula, asparagus, and orange
+                zest.
+              </p>
+              <p class="menu-diets">
+                <span class="material-symbols-outlined">eco</span>
+                <span class="material-symbols-outlined">grass</span>
+              </p>
+            </div>
+            <div class="grid menu-item">
+              <h4 class="menu-title">Entree Item 8</h4>
+              <p class="price">13</p>
+              <p class="menu-description">
+                Description of the item with arugula, asparagus, and orange
+                zest.
+              </p>
+              <p class="menu-diets">
+                <span class="material-symbols-outlined">eco</span>
+                <span class="material-symbols-outlined">grass</span>
+              </p>
+            </div>
+            <div class="grid menu-item">
+              <h4 class="menu-title">Entree Item 8</h4>
+              <p class="price">13</p>
+              <p class="menu-description">
+                Description of the item with arugula, asparagus, and orange
+                zest.
+              </p>
+              <p class="menu-diets">
+                <span class="material-symbols-outlined">eco</span>
+                <span class="material-symbols-outlined">grass</span>
+              </p>
+            </div>
+            <div class="grid menu-item">
+              <h4 class="menu-title">Entree Item 8</h4>
+              <p class="price">13</p>
+              <p class="menu-description">
+                Description of the item with arugula, asparagus, and orange
+                zest.
+              </p>
+              <p class="menu-diets">
+                <span class="material-symbols-outlined">eco</span>
+                <span class="material-symbols-outlined">grass</span>
+              </p>
+            </div>
+            <div class="grid menu-item">
+              <h4 class="menu-title">Entree Item 8</h4>
+              <p class="price">13</p>
+              <p class="menu-description">
+                Description of the item with arugula, asparagus, and orange
+                zest.
+              </p>
+              <p class="menu-diets">
+                <span class="material-symbols-outlined">eco</span>
+                <span class="material-symbols-outlined">grass</span>
+              </p>
+            </div>
+            <div class="grid menu-item">
+              <h4 class="menu-title">Entree Item 8</h4>
+              <p class="price">13</p>
+              <p class="menu-description">
+                Description of the item with arugula, asparagus, and orange
+                zest.
+              </p>
+              <p class="menu-diets">
+                <span class="material-symbols-outlined">eco</span>
+                <span class="material-symbols-outlined">grass</span>
+              </p>
+            </div>
+          </div>
+
           <!-- DESSERTS -->
-            <h3 class="menu-category">Desserts</h3>
-            <div class="grid grid--3-cols grid--menu">
-
-              <div class="grid menu-item">
-                <h4 class="menu-title">Dessert Item 4</h4>
-                <p class="price">13</p>
-                <p class="menu-description">Description of the item with arugula, asparagus, and orange zest.</p>
-                <p class="menu-diets">
-                  <span class="material-symbols-outlined">eco</span>
-                  <span class="material-symbols-outlined">grass</span>
-                </p>
-              </div>
-              <div class="grid menu-item">
-                <h4 class="menu-title">Dessert Item 4</h4>
-                <p class="price">13</p>
-                <p class="menu-description">Description of the item with arugula, asparagus, and orange zest.</p>
-                <p class="menu-diets">
-                  <span class="material-symbols-outlined">eco</span>
-                  <span class="material-symbols-outlined">grass</span>
-                </p>
-              </div>
-              <div class="grid menu-item">
-                <h4 class="menu-title">Dessert Item 4</h4>
-                <p class="price">13</p>
-                <p class="menu-description">Description of the item with arugula, asparagus, and orange zest.</p>
-                <p class="menu-diets">
-                  <span class="material-symbols-outlined">eco</span>
-                  <span class="material-symbols-outlined">grass</span>
-                </p>
-              </div>
-              <div class="grid menu-item">
-                <h4 class="menu-title">Dessert Item 4</h4>
-                <p class="price">13</p>
-                <p class="menu-description">Description of the item with arugula, asparagus, and orange zest.</p>
-                <p class="menu-diets">
-                  <span class="material-symbols-outlined">eco</span>
-                  <span class="material-symbols-outlined">grass</span>
-                </p>
-              </div>
-              
+          <h3 class="menu-category">Desserts</h3>
+          <div class="grid grid--3-cols grid--menu">
+            <div class="grid menu-item">
+              <h4 class="menu-title">Dessert Item 4</h4>
+              <p class="price">13</p>
+              <p class="menu-description">
+                Description of the item with arugula, asparagus, and orange
+                zest.
+              </p>
+              <p class="menu-diets">
+                <span class="material-symbols-outlined">eco</span>
+                <span class="material-symbols-outlined">grass</span>
+              </p>
             </div>
+            <div class="grid menu-item">
+              <h4 class="menu-title">Dessert Item 4</h4>
+              <p class="price">13</p>
+              <p class="menu-description">
+                Description of the item with arugula, asparagus, and orange
+                zest.
+              </p>
+              <p class="menu-diets">
+                <span class="material-symbols-outlined">eco</span>
+                <span class="material-symbols-outlined">grass</span>
+              </p>
+            </div>
+            <div class="grid menu-item">
+              <h4 class="menu-title">Dessert Item 4</h4>
+              <p class="price">13</p>
+              <p class="menu-description">
+                Description of the item with arugula, asparagus, and orange
+                zest.
+              </p>
+              <p class="menu-diets">
+                <span class="material-symbols-outlined">eco</span>
+                <span class="material-symbols-outlined">grass</span>
+              </p>
+            </div>
+            <div class="grid menu-item">
+              <h4 class="menu-title">Dessert Item 4</h4>
+              <p class="price">13</p>
+              <p class="menu-description">
+                Description of the item with arugula, asparagus, and orange
+                zest.
+              </p>
+              <p class="menu-diets">
+                <span class="material-symbols-outlined">eco</span>
+                <span class="material-symbols-outlined">grass</span>
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- RESERVATION SECTION -->
       <section class="container section-reservations">
         <h2 class="h2-sect-title" id="h2-reservation">Make a Reservation</h2>
-        <div class=" section-background">
+        <div class="section-background">
           <div class="grid grid--2-cols location-hours">
-          <div class="location-map">
-            <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3180.3550485146234!2d-86.04003098476403!3d37.144256355956365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88661b89f52aacdd%3A0xb8c6104af1812204!2s566%20Old%20Mammoth%20Cave%20Rd%2C%20Cave%20City%2C%20KY%2042127!5e0!3m2!1sen!2sus!4v1657078510360!5m2!1sen!2sus"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="location-map">
+              <iframe
+                class="google-map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3180.3550485146234!2d-86.04003098476403!3d37.144256355956365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88661b89f52aacdd%3A0xb8c6104af1812204!2s566%20Old%20Mammoth%20Cave%20Rd%2C%20Cave%20City%2C%20KY%2042127!5e0!3m2!1sen!2sus!4v1657078510360!5m2!1sen!2sus"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div class="hours-container">
+              <table class="hours-table">
+                <tr>
+                  <td>Tuesday</td>
+                  <td>4pm - 9pm</td>
+                </tr>
+                <tr>
+                  <td>Wednesday</td>
+                  <td>4pm - 9pm</td>
+                </tr>
+                <tr>
+                  <td>Thursday</td>
+                  <td>4pm - 9pm</td>
+                </tr>
+                <tr>
+                  <td>Friday</td>
+                  <td>11am - 10pm</td>
+                </tr>
+                <tr>
+                  <td>Saturday</td>
+                  <td>11am - 10pm</td>
+                </tr>
+                <tr>
+                  <td>Sunday</td>
+                  <td>11am - 10pm</td>
+                </tr>
+              </table>
+            </div>
           </div>
-          <div class="hours-container">
-            <table class="hours-table">
-              <tr>
-                <td>Tuesday</td>
-                <td>4pm - 9pm</td>
-              </tr>
-              <tr>
-                <td>Wednesday</td>
-                <td>4pm - 9pm</td>
-              </tr>
-              <tr>
-                <td>Thursday</td>
-                <td>4pm - 9pm</td>
-              </tr>
-              <tr>
-                <td>Friday</td>
-                <td>11am - 10pm</td>
-              </tr>
-              <tr>
-                <td>Saturday</td>
-                <td>11am - 10pm</td>
-              </tr>
-              <tr>
-                <td>Sunday</td>
-                <td>11am - 10pm</td>
-              </tr>
-            </table>
-          </div>
-        </div>
-        <!-- RESERVATION FORM -->
-          <form class="grid grid--6-cols reservation-form ">
+          <!-- RESERVATION FORM -->
+          <form class="grid grid--6-cols reservation-form">
             <div class="form-input date-div">
               <label for="date">Date</label>
-              <input type="date" id="date" name="reservation-date" required>
+              <input type="date" id="date" name="reservation-date" required />
             </div>
             <div class="form-input time-div">
               <label for="time">Time</label>
-              <input type="time" id="time" name="reservation-time" value="17:00" step="1800" required>
+              <input
+                type="time"
+                id="time"
+                name="reservation-time"
+                value="17:00"
+                step="1800"
+                required
+              />
             </div>
             <div class="form-input party-num-div">
               <label for="party-num">No. in Party</label>
@@ -340,16 +443,30 @@
                 <option value="five">5</option>
                 <option value="six">6</option>
                 <option value="seven">7</option>
-                <option value="eight-plus">8 +</option>   
+                <option value="eight-plus">8 +</option>
               </select>
             </div>
             <div class="form-input reservation-name-div">
               <label for="name">Name</label>
-              <input type="text" id="name" name="reservation-name" placeholder="Jibby Wahlberg" maxlength="40" required>
+              <input
+                type="text"
+                id="name"
+                name="reservation-name"
+                placeholder="Jibby Wahlberg"
+                maxlength="40"
+                required
+              />
             </div>
             <div class="form-input email-div">
               <label for="email">Email</label>
-              <input type="email" id="email" name="reservation-email" placeholder="jibby@example.com" maxlength="40" required>
+              <input
+                type="email"
+                id="email"
+                name="reservation-email"
+                placeholder="jibby@example.com"
+                maxlength="40"
+                required
+              />
             </div>
 
             <button class="btn btn--form" type="submit">Reserve a Table</button>
@@ -358,30 +475,39 @@
       </section>
 
       <!-- FOOTER -->
-
     </main>
-    <footer class="section-footer ">
+    <footer class="section-footer">
       <div class="grid grid--3-cols footer-inner">
-
         <div class="">
           <div class="footer-logo">Le Carbbarné</div>
-          <p class="copyright">
-            Copyright 2022
-          </p>
+          <p class="copyright">Copyright 2022</p>
         </div>
-          <ul class="footer-menu-list">
-            <li class="footer-list--head">Company</li>
-            <li><a class="footer-list--link" href="carb-barn.html">Careers</a></li>
-            <li><a class="footer-list--link" href="carb-barn.html">Intern Program</a></li>
-            <li><a class="footer-list--link" href="carb-barn.html">Contact Us</a></li>
-          </ul>
- 
-          <ul class="footer-menu-list">
-            <li class="footer-list--head">About</li>
-            <li><a class="footer-list--link" href="carb-barn.html">Inspirations</a></li>
-            <li><a class="footer-list--link" href="carb-barn.html">Cancellation Policy</a></li>
-          </ul>
+        <ul class="footer-menu-list">
+          <li class="footer-list--head">Company</li>
+          <li>
+            <a class="footer-list--link" href="carb-barn.html">Careers</a>
+          </li>
+          <li>
+            <a class="footer-list--link" href="carb-barn.html"
+              >Intern Program</a
+            >
+          </li>
+          <li>
+            <a class="footer-list--link" href="carb-barn.html">Contact Us</a>
+          </li>
+        </ul>
 
+        <ul class="footer-menu-list">
+          <li class="footer-list--head">About</li>
+          <li>
+            <a class="footer-list--link" href="carb-barn.html">Inspirations</a>
+          </li>
+          <li>
+            <a class="footer-list--link" href="carb-barn.html"
+              >Cancellation Policy</a
+            >
+          </li>
+        </ul>
       </div>
     </footer>
   </body>

@@ -90,4 +90,38 @@
 /* ************************************ */
 
 @media (max-width: 50em) {
+  .hero-inner {
+    width: 85vw;
+  }
+
+  .header-logo {
+    font-size: 2.4rem;
+    padding-left: 3.2rem;
+  }
+  .main-nav-list {
+    display: none;
+  }
+
+  .btn--mobile-nav {
+    display: block;
+    padding-right: 3.2rem;
+  }
+  h1.hero-title {
+    font-size: 2.8rem;
+    /* font-weight: 500; */
+  }
+
+  /* MENU  */
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--6-cols {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .date-div,
+  .time-div,
+  .party-num-div,
+  .reservation-name-div {
+    grid-column-start: span 6;
+  }
 }

@@ -1,5 +1,5 @@
 .header {
-  position: relative;
+  /* position: relative; */
   height: 100vh;
 }
 
@@ -14,11 +14,11 @@
   padding-bottom: 18rem;
   position: sticky;
   top: 0rem;
+  z-index: 9999;
   background-image: linear-gradient(
     rgba(0, 0, 0, 0.95),
     rgba(255, 255, 255, 0)
   );
-  z-index: 9999;
 }
 
 .header-logo {
@@ -31,6 +31,7 @@
 .main-nav {
   padding-right: 9.6rem;
 }
+
 .main-nav-list {
   list-style: none;
   display: flex;
