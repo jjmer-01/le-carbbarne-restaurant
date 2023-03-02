@@ -120,6 +120,10 @@ a:link {
   /* align-items: center; */
 }
 
+/* ************************************ */
+/* BUTTONS
+/* ************************************ */
+
 .btn {
   font-size: 1.6rem;
   padding: 1.6rem 3.6rem;
@@ -167,6 +171,35 @@ a:link {
   border-style: none;
   height: 6.4rem;
 }
+
+/* MOBILE  */
+
+/* .material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+} */
+
+.btn--mobile-nav {
+  color: #fff;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon--mobile-nav {
+  height: 5.2rem;
+  width: 5.2rem;
+}
+
+.icon--mobile-nav[name="close-icon"] {
+  display: none;
+}
+
+.icon--mobile-nav[name="menu-icon"] {
+}
+
+/* ************************************ */
+/* GRIDS
+/* ************************************ */
 
 .grid {
   display: grid;
