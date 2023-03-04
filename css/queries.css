@@ -55,7 +55,15 @@
   }
 
   main {
-    margin: -9.6rem 3.6rem 9.6rem 5.2rem;
+    margin: -9.6rem 2.4rem 9.6rem 2.4rem;
+  }
+
+  .header-hero {
+    transform: translate(-50%, -40%);
+  }
+
+  .header-logo {
+    font-size: 3.6rem;
   }
 
   .hero-title {
@@ -66,11 +74,42 @@
     flex-direction: column;
   }
 
-  .grid--menu {
-    grid-template-columns: repeat(2, 1fr);
-  }
   .form-input {
     padding: 1em 0;
+  }
+}
+
+/* ************************************ */
+/* MAX WIDTH 800PX  (...) */
+/* ************************************ */
+
+@media (max-width: 50em) {
+  .main-nav-list {
+    display: none;
+  }
+  .hero-inner {
+    width: 85vw;
+  }
+
+  .header-logo {
+    font-size: 3rem;
+    padding-left: 3.2rem;
+  }
+
+  .btn--mobile-nav {
+    display: block;
+    padding-right: 3.2rem;
+  }
+  h1.hero-title {
+    font-size: 2.8rem;
+    /* font-weight: 500; */
+  }
+  .section-background {
+    padding: 3rem;
+  }
+
+  .grid--menu {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .date-div,
@@ -83,45 +122,43 @@
   .email-div {
     grid-column-start: span 6;
   }
-}
 
-/* ************************************ */
-/* MAX WIDTH 800PX  (...) */
-/* ************************************ */
+  /* ************************************ */
+  /* MAX WIDTH 608PX  (...) */
+  /* ************************************ */
 
-@media (max-width: 50em) {
-  .hero-inner {
-    width: 85vw;
-  }
+  @media (max-width: 38em) {
+    .container--img-our-story {
+      max-height: 4.4rem;
+      max-width: 100%;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+    }
 
-  .header-logo {
-    font-size: 2.4rem;
-    padding-left: 3.2rem;
-  }
-  .main-nav-list {
-    display: none;
-  }
+    .img--our-story {
+      max-width: 1000%;
+      max-height: 120%;
+      position: absolute;
+    }
 
-  .btn--mobile-nav {
-    display: block;
-    padding-right: 3.2rem;
-  }
-  h1.hero-title {
-    font-size: 2.8rem;
-    /* font-weight: 500; */
-  }
+    #img--friends-cooking {
+      transform: translate(-7%, -0%);
+    }
 
-  /* MENU  */
-  .grid--2-cols,
-  .grid--3-cols,
-  .grid--6-cols {
-    grid-template-columns: repeat(1, 1fr);
-  }
+    /* MENU  */
+    .grid--2-cols,
+    .grid--3-cols,
+    .grid--6-cols {
+      grid-template-columns: repeat(1, 1fr);
+    }
 
-  .date-div,
-  .time-div,
-  .party-num-div,
-  .reservation-name-div {
-    grid-column-start: span 6;
+    .date-div,
+    .time-div,
+    .party-num-div,
+    .reservation-name-div {
+      grid-column-start: span 6;
+    }
   }
 }
