@@ -123,42 +123,89 @@
     grid-column-start: span 6;
   }
 
-  /* ************************************ */
-  /* MAX WIDTH 608PX  (...) */
-  /* ************************************ */
+  .footer-logo {
+    font-size: 3rem;
+  }
+}
 
-  @media (max-width: 38em) {
-    .container--img-our-story {
-      max-height: 4.4rem;
-      max-width: 100%;
-      position: relative;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-    }
+/* ************************************ */
+/* MAX WIDTH 608PX  (...) */
+/* ************************************ */
 
-    .img--our-story {
-      max-width: 1000%;
-      max-height: 120%;
-      position: absolute;
-    }
+@media (max-width: 38em) {
+  .container--img-our-story {
+    max-height: 4.4rem;
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
 
-    #img--friends-cooking {
-      transform: translate(-7%, -0%);
-    }
+  .img--our-story {
+    max-width: 1000%;
+    max-height: 120%;
+    position: absolute;
+  }
 
-    /* MENU  */
-    .grid--2-cols,
-    .grid--3-cols,
-    .grid--6-cols {
-      grid-template-columns: repeat(1, 1fr);
-    }
+  #img--friends-cooking {
+    transform: translate(-7%, -0%);
+  }
 
-    .date-div,
-    .time-div,
-    .party-num-div,
-    .reservation-name-div {
-      grid-column-start: span 6;
-    }
+  /* MENU  */
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--6-cols {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .date-div,
+  .time-div,
+  .party-num-div,
+  .reservation-name-div {
+    grid-column-start: span 6;
+  }
+
+  .section-footer {
+    margin-top: 4.8rem;
+  }
+
+  .footer-menu-list {
+    text-align: left;
+  }
+}
+
+/* ************************************ */
+/* MAX WIDTH 400PX  (mobile) */
+/* ************************************ */
+@media (max-width: 25em) {
+  .header-logo,
+  .footer-logo {
+    font-size: 2.4rem;
+  }
+
+  body {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    margin-top: 12rem;
+  }
+
+  .btn {
+    font-size: 1.4rem;
+  }
+
+  .form-input {
+    padding: 1rem 0;
+  }
+
+  .btn--form {
+    padding: 1.6rem 1.6rem;
+    line-height: 3.2rem;
+  }
+
+  .footer-list--head {
+    margin: 0 0 1.2rem;
   }
 }
