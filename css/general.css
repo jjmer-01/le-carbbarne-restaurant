@@ -174,25 +174,6 @@ a:link {
 
 /* MOBILE  */
 
-.btn--mobile-nav {
-  color: #fff;
-  background: none;
-  cursor: pointer;
-  display: none;
-}
-
-.icon--mobile-nav {
-  height: 5.2rem;
-  width: 5.2rem;
-}
-
-.icon--mobile-nav[name="close-icon"] {
-  display: none;
-}
-
-.icon--mobile-nav[name="menu-icon"] {
-}
-
 /* ************************************ */
 /* GRIDS
 /* ************************************ */

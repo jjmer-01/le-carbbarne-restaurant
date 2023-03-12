@@ -55,6 +55,28 @@
   border-bottom: solid 0.4rem #68681c;
 }
 
+/* MOBILE NAV */
+
+.btn--mobile-nav {
+  color: #fff;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon--mobile-nav {
+  height: 5.2rem;
+  width: 5.2rem;
+}
+
+.icon--mobile-nav[name="close-icon"] {
+  display: none;
+}
+
+.icon--mobile-nav[name="menu-icon"] {
+}
+
 /* ************************************ */
 /* HERO */
 /* ************************************ */
