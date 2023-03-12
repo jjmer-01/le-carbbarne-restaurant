@@ -41,7 +41,8 @@
   margin-right: 3.2rem;
 }
 
-.main-nav-link {
+.main-nav-link:link,
+.main-nav-link:visited {
   text-decoration: none;
   padding: 0.8rem;
   color: #fff;
@@ -58,7 +59,6 @@
 /* MOBILE NAV */
 
 .btn--mobile-nav {
-  color: #fff;
   border: none;
   background: none;
   cursor: pointer;
@@ -68,6 +68,7 @@
 .icon--mobile-nav {
   height: 5.2rem;
   width: 5.2rem;
+  color: #fff;
 }
 
 .icon--mobile-nav[name="close-icon"] {

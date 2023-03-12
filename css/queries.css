@@ -84,9 +84,6 @@
 /* ************************************ */
 
 @media (max-width: 50em) {
-  .main-nav-list {
-    display: none;
-  }
   .hero-inner {
     width: 85vw;
   }
@@ -96,14 +93,48 @@
     padding-left: 3.2rem;
   }
 
+  /* MOBILE NAV  */
+
   .btn--mobile-nav {
     display: block;
     padding-right: 3.2rem;
   }
+
+  .main-nav {
+    background-color: rgba(24, 31, 28, 0.99);
+    /* display: none; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 98%;
+    height: 98vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 0;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    gap: 4.8rem;
+  }
+
+  .main-nav-list li:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+
   h1.hero-title {
     font-size: 2.8rem;
-    /* font-weight: 500; */
   }
+
   .section-background {
     padding: 3rem;
   }
